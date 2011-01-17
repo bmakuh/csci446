@@ -2,9 +2,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title><!-- Insert your title here --></title>
+    <title>Life Figure-Outer Application</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="form-processor.js"></script>
 </head>
 <body>
-    <!-- Insert your content here -->
+    <div id="full-wrap">
+        <div id="header">
+            <h1>The Magic Life Figure-Outer!</h1>
+            <h2>Figuring out your life for you, so you don't have to...</h2>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="#" title="is where the heart is">Home</a></li>
+                <li><a href="#" title="like pong">Interests</a></li>
+                <li><a href="#" title="what you don't have as a comp sci">Health</a></li>
+                <li><a href="#" title="you got this nailed">Academic</a></li>
+                <li><a href="#" title="you've got the technical skills, but...">Professional</a></li>
+                <li><a href="#" title="besides WoW">Fun</a></li>
+                <li><a href="#" title="zombies">Evil</a></li>
+            </ul>
+            <span class="clear">.</span>
+        </div>
+        <div id="main-content">
+            <div id="feel-form">
+                <h2>Lorem Ipsum Dolor Sit Amet.</h2>
+                <form action="">
+                    <label for="howYouFeel">How do you feel today?</label>
+                    <input type="text" name="howYouFeel" id="howYouFeel" />
+                    <br />
+                    <label for="feelList">How would you like to feel? (choose all that apply)</label>
+                    <select name="feelList" id="feelList" multiple="" size="4">
+                        <option value="numb">Comfortably numb</option>
+                        <option value="grumpy">Grumpy as poop, you jerk</option>
+                        <option value="happy">Happy like I'm on controlled substances</option>
+                        <option value="normal">Normal. Absolutely Normal.</option>
+                    </select>
+                    <br />
+                    <label for="submit"></label>
+                    <input type="submit" name="submit" value="Feel me!" onclick="feelBlank();" />
+                </form>
+            </div>
+            
+            <div id="progress">
+                <h3>Current Progress in Life</h3>
+                <span>Mediocre. You really should enjoy life more.</span>
+            </div>
+			
+	    <div class="clear">.</div>
+        </div>
+        <div id="footer">
+            <span>&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</span>
+        </div>
+    </div>
 </body>
 </html>
