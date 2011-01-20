@@ -1,8 +1,15 @@
 # Be sure to restart your server when you modify this file.
 
-Project02::Application.config.session_store :cookie_store, :key => '_project02_session'
+# Your secret key for verifying cookie session data integrity.
+# If you change this key, all old sessions will become invalid!
+# Make sure the secret is at least 30 characters and all random, 
+# no regular words or you'll be exposed to dictionary attacks.
+ActionController::Base.session = {
+  :key         => '_project02_session',
+  :secret      => 'b57a2f91e43ff00ab14486751527bbb2297aa04f57dce9001947d06732deef063ad261f19abe9c11c133fc16e310f073c088870b6cda37938e65497b7de22f98'
+}
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
-# (create the session table with "rails generate session_migration")
-# Project02::Application.config.session_store :active_record_store
+# (create the session table with "rake db:sessions:create")
+# ActionController::Base.session_store = :active_record_store
