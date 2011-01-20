@@ -6,7 +6,7 @@
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
   :key         => '_project02_session',
-  :secret      => 'b57a2f91e43ff00ab14486751527bbb2297aa04f57dce9001947d06732deef063ad261f19abe9c11c133fc16e310f073c088870b6cda37938e65497b7de22f98'
+  :secret      => 'b22a409561fed748013dbefa5e79c77fe6097c069da8fcfa68b8b9615b55900cd3c72272e7475f051b5c4da1c648c187bfd5770acf8bd75a044edbb08bf3c0e3'
 }
 
 # Use the database for sessions instead of the cookie-based default,
