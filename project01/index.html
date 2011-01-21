@@ -2,7 +2,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <title>Life Figure-Outer Application</title>
+    <meta content="life goals, what I should do with my life, application" name="keywords" />
+    <meta content="The life figure-outer application considers your interests and skills and helps you figure out your life, not!" name="description" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script type="text/javascript" src="form-processor.js"></script>
 </head>
@@ -27,7 +31,7 @@
         <div id="main-content">
             <div id="feel-form">
                 <h2>Lorem Ipsum Dolor Sit Amet.</h2>
-                <form action="">
+                <form action="" onSubmit="return feelBlank();">
                     <label for="howYouFeel">How do you feel today?</label>
                     <input type="text" name="howYouFeel" id="howYouFeel" />
                     <br />
@@ -40,7 +44,7 @@
                     </select>
                     <br />
                     <label for="submit"></label>
-                    <input type="submit" name="submit" value="Feel me!" onclick="feelBlank();" />
+                    <input type="submit" name="submit" value="Feel me!" />
                 </form>
             </div>
             
