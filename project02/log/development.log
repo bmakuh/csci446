@@ -1973,3 +1973,357 @@ Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:41:13) [GET]
 Rendering template within layouts/store
 Rendering store/index
 Completed in 64ms (View: 39, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:43:29) [GET]
+  [4;35;1mProduct Load (3.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 69ms (View: 42, DB: 3) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:44:25) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 50ms (View: 25, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:44:32) [POST]
+  Parameters: {"authenticity_token"=>"HnyoTt0DVA/WztiBHqAT3H3DglI9BobSebKpG5YyF04="}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 47ms (View: 22, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:47:56) [POST]
+  Parameters: {"authenticity_token"=>"HnyoTt0DVA/WztiBHqAT3H3DglI9BobSebKpG5YyF04="}
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 53ms (View: 26, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:49:36) [POST]
+  Parameters: {"authenticity_token"=>"HnyoTt0DVA/WztiBHqAT3H3DglI9BobSebKpG5YyF04="}
+  [4;35;1mProduct Load (3.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `minute' for #<ActionView::Base:0x93492c0>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now month day hour minute %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:49:36) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `minute' for #<ActionView::Base:0x9468240>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now month day hour minute %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:49:49) [POST]
+  Parameters: {"authenticity_token"=>"HnyoTt0DVA/WztiBHqAT3H3DglI9BobSebKpG5YyF04="}
+  [4;35;1mProduct Load (3.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `min' for #<ActionView::Base:0x92f8428>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now month day hour min %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:49:51) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `min' for #<ActionView::Base:0x94669e0>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now month day hour min %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:50:10) [POST]
+  Parameters: {"authenticity_token"=>"HnyoTt0DVA/WztiBHqAT3H3DglI9BobSebKpG5YyF04="}
+  [4;35;1mProduct Load (3.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `month' for #<ActionView::Base:0x92fb470>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now month, day, hour, min %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:50:16) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `month' for #<ActionView::Base:0x9463bd8>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now month, day, hour, min %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:50:25) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `month' for #<ActionView::Base:0x92f9f70>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now( month, day, hour, min) %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:50:27) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `month' for #<ActionView::Base:0x94635c0>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now( month, day, hour, min) %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:50:31) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `year' for #<ActionView::Base:0x92fac00>) on line #19 of app/views/layouts/store.html.erb:
+16:         <a href="#">News</a><br />
+17:         <a href="#">Contact</a><br />
+18:         
+19:         <%=h Time.now(year, month, day, hour, min) %>
+20:       </div>
+21:       <div id="main">
+22:         <%= yield :layout %>
+
+    app/views/layouts/store.html.erb:19
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:51:26) [GET]
+  [4;36;1mProduct Load (3.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 68ms (View: 38, DB: 3) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:51:26) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 35ms (View: 19, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:52:15) [GET]
+  [4;36;1mProduct Load (4.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 77ms (View: 46, DB: 4) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:52:29) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 87ms (View: 53, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-27 00:52:32) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 56ms (View: 35, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 14:18:25) [GET]
+  [4;36;1mProduct Load (9.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 7123ms (View: 7035, DB: 9) | 200 OK [http://localhost/store]
