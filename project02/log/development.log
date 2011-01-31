@@ -3395,3 +3395,670 @@ Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:31:58) [P
 Rendering template within layouts/store
 Rendering store/add_to_cart
 Completed in 48ms (View: 10, DB: 3) | 200 OK [http://localhost/store/add_to_cart/6]
+
+
+Processing ApplicationController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:34:24) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"6"}
+
+SyntaxError (z:/cs446/src/project02/app/controllers/store_controller.rb:18: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash[:notice] "Your cart is currently empty"
+                    ^):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:34:27) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"6"}
+
+SyntaxError (z:/cs446/src/project02/app/controllers/store_controller.rb:18: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash[:notice] "Your cart is currently empty"
+                    ^):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:34:54) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"6"}
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 48ms (View: 16, DB: 5) | 200 OK [http://localhost/store/add_to_cart/6]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2011-01-30 23:34:56) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE="}
+Redirected to http://localhost:3000/store
+Completed in 27ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 23:34:56) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 44ms (View: 20, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:34:59) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 55ms (View: 9, DB: 3) | 200 OK [http://localhost/store/add_to_cart/4]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2011-01-30 23:35:01) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE="}
+Redirected to http://localhost:3000/store
+Completed in 30ms (DB: 2) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 23:35:01) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 40ms (View: 25, DB: 3) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 23:39:41) [GET]
+  [4;36;1mProduct Load (4.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 49ms (View: 23, DB: 5) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 23:43:42) [GET]
+  [4;35;1mProduct Load (6.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 61ms (View: 31, DB: 7) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:43:44) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+ERROR: compiling _run_erb_app47views47store47add_to_cart46html46erb RAISED compile error
+z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:13: syntax error, unexpected ';', expecting ')'
+...ncy(@cart.total_price ).to_s); @output_buffer.concat "</td>\...
+                              ^
+Function body:           def _run_erb_app47views47store47add_to_cart46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"cart-title\">Your Cart</div>\n<table>\n  "
+
+;  for item in @cart.items ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( item.quantity ).to_s); @output_buffer.concat "&times;</td>\n    <td>"
+; @output_buffer.concat((h item.title ).to_s); @output_buffer.concat "</td>\n    <td class=\"item-price\">"
+; @output_buffer.concat(( number_to_currency(item.price) ).to_s); @output_buffer.concat "</td>\n  </tr>\n  "
+
+;  end ; @output_buffer.concat "\n  \n  <tr class=\"total-line\">\n    <td colspan=\"2\">Total</td>\n    <td class=\"total-cell\">"
+
+
+
+; @output_buffer.concat(( number_to_currency(@cart.total_price ).to_s); @output_buffer.concat "</td>\n  </tr>\n</table>\n\n"
+
+
+
+; @output_buffer.concat(( button_to "Empty Cart", :action => :empty_cart ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:20:in `compile!'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:13: syntax error, unexpected ';', expecting ')'
+...ncy(@cart.total_price ).to_s); @output_buffer.concat "</td>\...
+                              ^) on line #13 of app/views/store/add_to_cart.html.erb:
+10:   
+11:   <tr class="total-line">
+12:     <td colspan="2">Total</td>
+13:     <td class="total-cell"><%= number_to_currency(@cart.total_price %></td>
+14:   </tr>
+15: </table>
+16: 
+
+    app/views/store/add_to_cart.html.erb:20:in `compile!'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:47:45) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+ERROR: compiling _run_erb_app47views47store47add_to_cart46html46erb RAISED compile error
+z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:13: syntax error, unexpected ';', expecting ')'
+...ncy(@cart.total_price ).to_s); @output_buffer.concat "</td>\...
+                              ^
+Function body:           def _run_erb_app47views47store47add_to_cart46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"cart-title\">Your Cart</div>\n<table>\n  "
+
+;  for item in @cart.items ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( item.quantity ).to_s); @output_buffer.concat "&times;</td>\n    <td>"
+; @output_buffer.concat((h item.title ).to_s); @output_buffer.concat "</td>\n    <td class=\"item-price\">"
+; @output_buffer.concat(( number_to_currency(item.price) ).to_s); @output_buffer.concat "</td>\n  </tr>\n  "
+
+;  end ; @output_buffer.concat "\n  \n  <tr class=\"total-line\">\n    <td colspan=\"2\">Total</td>\n    <td class=\"total-cell\">"
+
+
+
+; @output_buffer.concat(( number_to_currency(@cart.total_price ).to_s); @output_buffer.concat "</td>\n  </tr>\n</table>\n\n"
+
+
+
+; @output_buffer.concat(( button_to "Empty Cart", :action => :empty_cart ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:20:in `compile!'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:13: syntax error, unexpected ';', expecting ')'
+...ncy(@cart.total_price ).to_s); @output_buffer.concat "</td>\...
+                              ^) on line #13 of app/views/store/add_to_cart.html.erb:
+10:   
+11:   <tr class="total-line">
+12:     <td colspan="2">Total</td>
+13:     <td class="total-cell"><%= number_to_currency(@cart.total_price %></td>
+14:   </tr>
+15: </table>
+16: 
+
+    app/views/store/add_to_cart.html.erb:20:in `compile!'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:47:48) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+ERROR: compiling _run_erb_app47views47store47add_to_cart46html46erb RAISED compile error
+z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:13: syntax error, unexpected ';', expecting ')'
+...ncy(@cart.total_price ).to_s); @output_buffer.concat "</td>\...
+                              ^
+Function body:           def _run_erb_app47views47store47add_to_cart46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"cart-title\">Your Cart</div>\n<table>\n  "
+
+;  for item in @cart.items ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( item.quantity ).to_s); @output_buffer.concat "&times;</td>\n    <td>"
+; @output_buffer.concat((h item.title ).to_s); @output_buffer.concat "</td>\n    <td class=\"item-price\">"
+; @output_buffer.concat(( number_to_currency(item.price) ).to_s); @output_buffer.concat "</td>\n  </tr>\n  "
+
+;  end ; @output_buffer.concat "\n  \n  <tr class=\"total-line\">\n    <td colspan=\"2\">Total</td>\n    <td class=\"total-cell\">"
+
+
+
+; @output_buffer.concat(( number_to_currency(@cart.total_price ).to_s); @output_buffer.concat "</td>\n  </tr>\n</table>\n\n"
+
+
+
+; @output_buffer.concat(( button_to "Empty Cart", :action => :empty_cart ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:20:in `compile!'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:13: syntax error, unexpected ';', expecting ')'
+...ncy(@cart.total_price ).to_s); @output_buffer.concat "</td>\...
+                              ^) on line #13 of app/views/store/add_to_cart.html.erb:
+10:   
+11:   <tr class="total-line">
+12:     <td colspan="2">Total</td>
+13:     <td class="total-cell"><%= number_to_currency(@cart.total_price %></td>
+14:   </tr>
+15: </table>
+16: 
+
+    app/views/store/add_to_cart.html.erb:20:in `compile!'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 23:48:03) [GET]
+  [4;35;1mProduct Load (6.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 73ms (View: 44, DB: 7) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:48:06) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+ERROR: compiling _run_erb_app47views47store47add_to_cart46html46erb RAISED compile error
+z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:13: syntax error, unexpected ';', expecting ')'
+...ncy(@cart.total_price ).to_s); @output_buffer.concat "</td>\...
+                              ^
+Function body:           def _run_erb_app47views47store47add_to_cart46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"cart-title\">Your Cart</div>\n<table>\n  "
+
+;  for item in @cart.items ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( item.quantity ).to_s); @output_buffer.concat "&times;</td>\n    <td>"
+; @output_buffer.concat((h item.title ).to_s); @output_buffer.concat "</td>\n    <td class=\"item-price\">"
+; @output_buffer.concat(( number_to_currency(item.price) ).to_s); @output_buffer.concat "</td>\n  </tr>\n  "
+
+;  end ; @output_buffer.concat "\n  \n  <tr class=\"total-line\">\n    <td colspan=\"2\">Total</td>\n    <td class=\"total-cell\">"
+
+
+
+; @output_buffer.concat(( number_to_currency(@cart.total_price ).to_s); @output_buffer.concat "</td>\n  </tr>\n</table>\n\n"
+
+
+
+; @output_buffer.concat(( button_to "Empty Cart", :action => :empty_cart ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:20:in `compile!'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+z:/cs446/src/project02/app/views/store/add_to_cart.html.erb:13: syntax error, unexpected ';', expecting ')'
+...ncy(@cart.total_price ).to_s); @output_buffer.concat "</td>\...
+                              ^) on line #13 of app/views/store/add_to_cart.html.erb:
+10:   
+11:   <tr class="total-line">
+12:     <td colspan="2">Total</td>
+13:     <td class="total-cell"><%= number_to_currency(@cart.total_price %></td>
+14:   </tr>
+15: </table>
+16: 
+
+    app/views/store/add_to_cart.html.erb:20:in `compile!'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:48:52) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 63ms (View: 23, DB: 5) | 200 OK [http://localhost/store/add_to_cart/4]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:49:07) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"6"}
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 67ms (View: 17, DB: 7) | 200 OK [http://localhost/store/add_to_cart/6]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:49:12) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"5"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 5) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 48ms (View: 19, DB: 2) | 200 OK [http://localhost/store/add_to_cart/5]
