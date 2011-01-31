@@ -4209,3 +4209,266 @@ Rendered store/_cart_item (1.0ms)
 Rendered store/_cart_item (1.0ms)
 Rendered store/_cart (14.0ms)
 Completed in 104ms (View: 55, DB: 3) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 00:18:49) [GET]
+  [4;35;1mProduct Load (7.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.0ms)
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart_item (0.0ms)
+Rendered store/_cart (9.0ms)
+Completed in 113ms (View: 66, DB: 8) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2011-01-31 00:19:02) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE="}
+Redirected to http://localhost:3000/store
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 00:19:02) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.0ms)
+Completed in 81ms (View: 42, DB: 3) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add to cart (for 127.0.0.1 at 2011-01-31 00:19:06) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+
+ActionController::UnknownAction (No action responded to add to cart. Actions: add_to_cart, empty_cart, and index):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#add to cart (for 127.0.0.1 at 2011-01-31 00:19:16) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"6"}
+
+ActionController::UnknownAction (No action responded to add to cart. Actions: add_to_cart, empty_cart, and index):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 00:19:42) [GET]
+  [4;35;1mProduct Load (4.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.0ms)
+Completed in 76ms (View: 36, DB: 5) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add to cart (for 127.0.0.1 at 2011-01-31 00:19:46) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+
+ActionController::UnknownAction (No action responded to add to cart. Actions: add_to_cart, empty_cart, and index):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#add to cart (for 127.0.0.1 at 2011-01-31 00:19:51) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"6"}
+
+ActionController::UnknownAction (No action responded to add to cart. Actions: add_to_cart, empty_cart, and index):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 00:20:56) [GET]
+  [4;36;1mProduct Load (4.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (3.0ms)
+Completed in 82ms (View: 43, DB: 5) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add to cart (for 127.0.0.1 at 2011-01-31 00:21:02) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+
+ActionController::UnknownAction (No action responded to add to cart. Actions: add_to_cart, empty_cart, and index):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 00:27:24) [GET]
+  [4;35;1mProduct Load (5.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart (13.0ms)
+Completed in 181ms (View: 118, DB: 6) | 200 OK [http://localhost/store]
+                                                                                   
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 16:22:30) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 16:22:30) [GET]
+
+Errno::EINVAL (Invalid argument - z:/cs446/src/project02/log/development.log):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add to cart (for 127.0.0.1 at 2011-01-31 16:22:30) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+
+ActionController::UnknownAction (No action responded to add to cart. Actions: add_to_cart, empty_cart, and index):
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-31 16:24:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Attempt to access invalid product 2
+Redirected to http://localhost:3000/store
+Completed in 194ms (DB: 11) | 302 Found [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 16:24:53) [GET]
+  [4;35;1mProduct Load (3.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (3.0ms)
+Completed in 189ms (View: 144, DB: 4) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 16:24:54) [GET]
+  [4;36;1mProduct Load (3.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart (12.0ms)
+Completed in 138ms (View: 72, DB: 15) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 16:29:08) [GET]
+  [4;35;1mProduct Load (7.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (5.0ms)
+Completed in 197ms (View: 151, DB: 8) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-31 16:29:10) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (4.0ms)
+Rendered store/_cart (14.0ms)
+Completed in 83ms (View: 53, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-31 16:29:12) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (17.0ms)
+Rendered store/_cart (24.0ms)
+Completed in 130ms (View: 74, DB: 2) | 200 OK [http://localhost/store/add_to_cart/4]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-31 16:29:14) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"6"}
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (14.0ms)
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart (30.0ms)
+Completed in 157ms (View: 46, DB: 3) | 200 OK [http://localhost/store/add_to_cart/6]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-31 16:29:16) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"5"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 5) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (7.0ms)
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart (27.0ms)
+Completed in 77ms (View: 42, DB: 2) | 200 OK [http://localhost/store/add_to_cart/5]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-31 16:29:18) [POST]
+  Parameters: {"commit"=>"Add to cart", "authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"5"}
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 5) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (19.0ms)
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart (36.0ms)
+Completed in 107ms (View: 52, DB: 2) | 200 OK [http://localhost/store/add_to_cart/5]
