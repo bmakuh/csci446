@@ -3318,3 +3318,80 @@ Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:21:56) [P
 Rendering template within layouts/store
 Rendering store/add_to_cart
 Completed in 43ms (View: 13, DB: 4) | 200 OK [http://localhost/store/add_to_cart/4]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:27:26) [GET]
+  Parameters: {"id"=>"ben"}
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Attempt to access invalid product ben
+Redirected to http://localhost:3000/store
+Completed in 75ms (DB: 3) | 302 Found [http://localhost/store/add_to_cart/ben]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 23:27:26) [GET]
+  [4;35;1mProduct Load (3.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 53ms (View: 37, DB: 4) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:31:21) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;36;1mProduct Load (3.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 84ms (View: 27, DB: 8) | 200 OK [http://localhost/store/add_to_cart/4]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:31:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Attempt to access invalid product 3
+Redirected to http://localhost:3000/store
+Completed in 50ms (DB: 3) | 302 Found [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 23:31:45) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 67ms (View: 50, DB: 3) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:31:47) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 38ms (View: 11, DB: 1) | 200 OK [http://localhost/store/add_to_cart/4]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:31:51) [GET]
+  Parameters: {"id"=>"wibble"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Attempt to access invalid product wibble
+Redirected to http://localhost:3000/store
+Completed in 41ms (DB: 0) | 302 Found [http://localhost/store/add_to_cart/wibble]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-01-30 23:31:52) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 46ms (View: 32, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:31:54) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"4"}
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 36ms (View: 6, DB: 2) | 200 OK [http://localhost/store/add_to_cart/4]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2011-01-30 23:31:58) [POST]
+  Parameters: {"authenticity_token"=>"3pUUUeL4JTyO0r09TEJW0qOKbbuT7T5mUMaAXeqhCFE=", "id"=>"6"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 48ms (View: 10, DB: 3) | 200 OK [http://localhost/store/add_to_cart/6]
