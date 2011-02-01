@@ -13,7 +13,9 @@
     <div id="columns">
       <div id="side">
         <div id="cart">
-          <%= render(:partial => "cart", :object => @cart) %>
+          <% hidden_div_if(@cart.items.empty?, :id => "cart") do %>
+            <%= render(:partial => "cart", :object => @cart) %>
+          <% end %>
         </div>
         
         <a href="#">Home</a><br />
