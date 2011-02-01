@@ -181,6 +181,11 @@ span#time {
 	text-align: center;
 }
 
+.locale {
+	float:right;
+	padding-top: .2em;
+}
+
 #banner img {
 	float: left;
 }
