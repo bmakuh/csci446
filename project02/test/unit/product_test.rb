@@ -1,8 +1,8 @@
 require 'test_helper'
-fixtures :products
 
 class ProductTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
+  fixtures :products
+  
   test "the truth" do
     assert true
   end

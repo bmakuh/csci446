@@ -10,17 +10,17 @@ class CartTest < ActiveSupport::TestCase
   end
   
   test "add unique products" do
-    cart.add_product @rails
-    cart.add_product @ruby
-    assert_equal 2, cart.items.size
-    assert_equal rails_book.price + ruby_book.price, cart.total_price
+    @cart.add_product @rails
+    @cart.add_product @ruby
+    assert_equal 2, @cart.items.size
+    assert_equal @rails.price + @ruby.price, @cart.total_price
   end
   
   test "add_duplicate_product" do
-    cart.add_product @rails
-    cart.add_product @rails
-    assert_equal 2*rails_book.price, cart.total_price
-    assert_equal 1, cart.items.size
-    assert_equal 2, cart.items[0].quantity
+    @cart.add_product @rails
+    @cart.add_product @rails
+    assert_equal 2*@rails.price, @cart.total_price
+    assert_equal 1, @cart.items.size
+    assert_equal 2, @cart.items[0].quantity
   end
 end
