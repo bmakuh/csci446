@@ -1,25 +1,29 @@
+<h3 class="header">...with a name .com hipsters love!</h3>
+
 <h2 id="table-title">All the World's Articles</h2>
 
 <span id="new-article"><%= link_to 'New article', new_article_path %></span>
 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Author name</th>
-    <th>Body</th>
-    <th class="align-center">Creation date</th>
-    <th class="icon" colspan="3">&nbsp;</th>
-  </tr>
+    <tr>
+      <th>Title</th>
+      <th>Author name</th>
+      <th>Body</th>
+      <th class="align-center">Creation date</th>
+      <th class="icon" colspan="3">&nbsp;</th>
+    </tr>
 
-<% @articles.each do |article| %>
-  <tr>
-    <td><%=h article.title %></td>
-    <td><%=h article.author_name %></td>
-    <td><%=h truncate(article.body, 80, "...") %></td>
-    <td><%=h article.creation_date %></td>
-    <td class="icon"><%= link_to image_tag("show.png", :border=>0, :title=>"show"), article %></td>
-    <td class="icon"><%= link_to image_tag("edit.png", :border=>0, :title=>"edit"), edit_article_path(article) %></td>
-    <td class="icon"><%= link_to image_tag("destroy.png", :border=>0, :title=>"destroy"), article, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%=h article.title %></td>
+        <td><%=h article.author_name %></td>
+        <td><%=h truncate(article.body, 80, "...") %></td>
+        <td><%=h article.creation_date %></td>
+        <td class="icon"><%= link_to image_tag("show.png", :border=>0, :title=>"show"), article %></td>
+        <td class="icon"><%= link_to image_tag("edit.png", :border=>0, :title=>"edit"), edit_article_path(article) %></td>
+        <td class="icon"><%= link_to image_tag("destroy.png", :border=>0, :title=>"destroy"), article, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
 </table>
+
+<div id="article-count"><%= pluralize(Article.count, 'article', 'articles') %>.</div>

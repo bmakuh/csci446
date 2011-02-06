@@ -11,20 +11,20 @@ a:hover {
 
 /* header styles */
 
-#header {
+.header {
     margin:0 auto;
     text-align:center;
 }
 
-#header h1 {
+h1.header {
     color:#383;
 }
 
-#header h1 span {
+h1.header span {
     color:#9c9;
 }
 
-#header h3 {
+h3.header {
     color:#aaa;
 }
 
@@ -42,11 +42,18 @@ a:hover {
 
 table {
     border:1px solid #383;
+    display:table;
     margin-top:20px;
     border-collapse:collapse;
-    overflow:scroll;
     width:100%;
 }
+
+/*table {
+    display:block;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:150px !important;
+}*/
 
 th {
     background:#9c9;
@@ -88,3 +95,35 @@ td {
 tr:nth-child(odd) {
     background:#dfd;
 }
+
+#article-count {
+    margin: 2em 0;
+}
+
+/* show styles */
+.article-body p {
+    text-indent:1em;
+}
+
+.article-title {
+    clear:both;
+}
+
+/* nav bar for show article */
+#nav-bar {
+    list-style:none;
+    margin: 2em 0;
+}
+
+#nav-bar li {
+    float:left;
+    margin-right:5em;
+    margin-bottom:2em;
+}
+
+#nav-bar li a:hover {
+    color:#383 !important;
+}
+
+/* Errors */
+
