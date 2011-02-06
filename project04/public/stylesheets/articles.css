@@ -1,0 +1,90 @@
+/* global styles */
+a, a:visited {
+    color:#383;
+    text-decoration:none;
+}
+
+a:hover {
+    background:none;
+    text-decoration:underline;
+}
+
+/* header styles */
+
+#header {
+    margin:0 auto;
+    text-align:center;
+}
+
+#header h1 {
+    color:#383;
+}
+
+#header h1 span {
+    color:#9c9;
+}
+
+#header h3 {
+    color:#aaa;
+}
+
+/* new article */
+#new-article {
+    background: url("/images/add.png") no-repeat top left;
+    padding-left:20px;
+}
+
+/* Table styles */
+#table-title {
+    display:inline-block;
+    margin-right:100px;
+}
+
+table {
+    border:1px solid #383;
+    margin-top:20px;
+    border-collapse:collapse;
+    overflow:scroll;
+    width:100%;
+}
+
+th {
+    background:#9c9;
+    padding:0 !important;
+    margin:0 !important;
+    border-right:1px solid #383;
+    max-height:5px;
+}
+
+th.align-center {
+    text-align:center !important;
+}
+
+.icon {
+    background:#fff;
+    border:1px solid white !important;
+}
+
+.icon a:hover {
+    background:none;
+}
+
+th, td {
+    text-align:left;
+    vertical-align:top;
+}
+
+tr {
+    height: 10px !important;
+    overflow:hidden;
+}
+
+td {
+    border: 1px solid #383;
+    border-width: 0 1px 0 0;
+    padding: .5em .4em;
+}
+
+tr:nth-child(odd) {
+    background:#dfd;
+}
