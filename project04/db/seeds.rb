@@ -6,5 +6,13 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
 
-articles = Article.create([ :title => 'Lorem Ipsum', :author_name => 'Robert Frost',
-                           :body => 'Robert Lee Frost (March 26, 1874 – January 29, 1963) was an American poet. He is highly regarded for his realistic depictions of rural life and his command of American colloquial speech.[1] His work frequently employed settings from rural life in New England in the early twentieth century, using them to examine complex social and philosophical themes. A popular and often-quoted poet, Frost was honored frequently during his lifetime, receiving four Pulitzer Prizes for Poetry.'])
+require 'rubygems'
+require 'faker'
+
+@articles = Article.find(:all)
+
+for i in 1..15
+  articles = Article.create([ :title => Faker::Lorem.words(rand(7)+1).join(' ').capitalize,
+                           :author_name => Faker::Name.name, :body => Faker::Lorem.paragraphs(rand(4)+1).join(' '),
+                           :creation_date => Date.today])
+end

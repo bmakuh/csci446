@@ -36,26 +36,17 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find(params[:id])
     
-    #respond_to do |format|
-    #  if @article.update_attributes(params[:article])
-    #    flash[:notice] = "#{@article.title} was successfully edited."
-    #    format.html {redirect_to :back}
-    #    format.xml {render :xml => @article, :status => :created, :location => @article}
-    #  else
-    #    format.html {redirect_to :back}
-    #    format.xml {render :xml => @article.errors, :status => :unprocessable_entity}
-    #  end
-    #end
   end
 
   # POST /articles
   # POST /articles.xml
   def create
     @article = Article.new(params[:article])
+    #@article.update_attribute(:edit_count, Article.increment_counter)
 
     respond_to do |format|
       if @article.save
-        format.html { redirect_to(@article, :notice => 'Article was successfully created.') }
+        format.html { redirect_to(:back, :notice => 'Article was successfully created.') }
         format.xml  { render :xml => @article, :status => :created, :location => @article }
       else
         format.html { render :action => "new" }
@@ -68,6 +59,7 @@ class ArticlesController < ApplicationController
   # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
+    #Article.increment_counter(:edit_count, :id)
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
