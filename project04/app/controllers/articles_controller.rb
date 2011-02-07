@@ -35,6 +35,17 @@ class ArticlesController < ApplicationController
   # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
+    
+    #respond_to do |format|
+    #  if @article.update_attributes(params[:article])
+    #    flash[:notice] = "#{@article.title} was successfully edited."
+    #    format.html {redirect_to :back}
+    #    format.xml {render :xml => @article, :status => :created, :location => @article}
+    #  else
+    #    format.html {redirect_to :back}
+    #    format.xml {render :xml => @article.errors, :status => :unprocessable_entity}
+    #  end
+    #end
   end
 
   # POST /articles
@@ -60,7 +71,7 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
-        format.html { redirect_to(@article, :notice => 'Article was successfully updated.') }
+        format.html { redirect_to(:back, :notice => 'Article was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

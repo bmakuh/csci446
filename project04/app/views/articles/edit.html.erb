@@ -1,4 +1,5 @@
-<%= link_to 'Back', articles_path %>
+<%= link_to image_tag("back.png", :border=>0, :title=>"back"), :back %>
+<%= link_to 'Back', :back %>
 
 <h1>Editing "<%=h @article.title %>"</h1>
 
@@ -6,20 +7,16 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :title %><br />
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </p>
   <p>
-    <%= f.label :author_name %><br />
+    <%= f.label :author_name %>
     <%= f.text_field :author_name %>
   </p>
   <p>
-    <%= f.label :body %><br />
+    <%= f.label :body %>
     <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.label :creation_date %><br />
-    <%= f.date_select :creation_date %>
   </p>
   <p>
     <%= f.submit 'Save Changes' %>

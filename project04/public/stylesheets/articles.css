@@ -9,6 +9,25 @@ a:hover {
     text-decoration:underline;
 }
 
+label {
+    display:inline !important;
+    float:left;
+    width: 100px;
+}
+
+input, textarea, label {
+    margin:10px 0;
+}
+
+input[type="text"], textarea {
+    border:1px solid #383;
+    padding:.2em;
+}
+
+input[type="submit"] {
+    margin-left:100px;
+}
+
 /* header styles */
 
 .header {
