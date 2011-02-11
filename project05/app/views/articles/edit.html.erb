@@ -1,4 +1,6 @@
-<h3 class="header">... my cousin works for Bit.ly</h3>
+<% content_for :subtitle do %>
+... my cousin works for Bit.ly
+<% end %>
 
 <%= link_to image_tag("back.png", :border=>0, :title=>"back"), :back %>
 <%= link_to 'Back', :back %>
@@ -6,20 +8,7 @@
 <h1>Editing "<%=h @article.title %>"</h1>
 
 <% form_for(@article) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :author_name %>
-    <%= f.text_field :author_name %>
-  </p>
-  <p>
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </p>
+  <%= render :partial => 'form', :locals => {:f => f} %>
   <p>
     <%= f.submit 'Save Changes' %>
   </p>

@@ -1,4 +1,6 @@
-<h3 class="header">...with a name .com hipsters love!</h3>
+<% content_for :subtitle do %>
+...with a name .com hipsters love!
+<% end %>
 
 <div id="center-content">
   <h2 id="table-title">All the World's Articles</h2>
@@ -20,10 +22,10 @@
       <tbody id="table-body">
         <% @articles.each do |article| %>
           <tr>
-            <td><%=h truncate(article.title, 30, "...") %></td>
+            <td><%=h truncate(article.title, :length => 20) %></td>
             <td><%=h article.author_name %></td>
-            <td><%= truncate(article.body, 80, "...") %></td>
-            <td><%=h article.creation_date %></td>
+            <td><%= truncate(article.body, :length => 80) %></td>
+            <td><%= article.created_at.to_s(:short) %></td>
             <td class="icon"><%= link_to image_tag("show.png", :border=>0, :title=>"show"), article %></td>
             <td class="icon"><%= link_to image_tag("edit.png", :border=>0, :title=>"edit"), edit_article_path(article) %></td>
             <td class="icon"><%= link_to image_tag("destroy.png", :border=>0, :title=>"destroy"), article, :confirm => 'Are you sure?', :method => :delete %></td>

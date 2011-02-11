@@ -10,7 +10,8 @@
 <body>
 
 <h1 class="header"><a href="/articles">Articl<span>.es<span></a></h1>
-
+<h3 class="header"><%= yield :subtitle %></h3>
+<%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
 <p style="color: green"><%= notice %></p>
 
 <%= yield %>

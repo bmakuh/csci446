@@ -1,10 +1,10 @@
 class CreateArticles < ActiveRecord::Migration
   def self.up
     create_table :articles do |t|
-      t.string :title
-      t.string :author_name
-      t.string :body
-      t.string :creation_date
+      t.string :title, :null => false
+      t.string :author_name, :null => false
+      t.string :body, :null => false
+      t.integer :update_count, :default => 0
 
       t.timestamps
     end

@@ -29,6 +29,32 @@ input[type="submit"] {
     margin-left:100px;
 }
 
+.fieldWithErrors {
+    background:none !important;
+    display:inline;
+}
+
+.flash {
+    margin: 1em 0 1em 0;
+}
+
+.flash p {
+    margin:0px;
+    padding:1em;
+}
+
+.flash.success {
+    border:1px solid #090;
+    color:#060;
+    background:#f0fff0;
+}
+
+.flash.error {
+    border:1px solid #900;
+    color:#900;
+    background:#fff0f0;
+}
+
 /* header styles */
 
 .header {
