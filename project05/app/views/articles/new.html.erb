@@ -1,0 +1,28 @@
+<h3 class="header">... not just for the country of Spain</h3>
+
+<%= link_to image_tag("back.png", :border=>0, :title=>"back"), :back %>
+<%= link_to 'Back', :back %>
+
+<h1>Creating a New Article</h1>
+
+<% form_for(@article) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author_name %>
+    <%= f.text_field :author_name %>
+  </p>
+  <p>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', articles_path %>

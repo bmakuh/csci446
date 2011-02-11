@@ -1,0 +1,35 @@
+<h3 class="header">... what's "Articl" in Spanish anyway?</h3>
+
+<ul id="nav-bar">
+  <li>
+    <%= link_to image_tag("back.png", :border=>0, :title=>"list all articles"), articles_path %>
+    <%= link_to 'list all articles', articles_path %>
+  </li>
+  <li>
+    <%= link_to image_tag("edit.png", :border=>0, :title=>"edit"), edit_article_path(@article) %>
+    <%= link_to 'edit', edit_article_path(@article) %>
+  </li>
+  <li>
+    <%= link_to image_tag("destroy.png", :border=>0, :title=>"delete"), @article, :confirm => 'Are you sure?', :method => :delete %>
+    <%= link_to 'delete', @article, :confirm => 'Are you sure?', :method => :delete %>
+  </li>
+  <li>
+    <%= mail_to '', image_tag("email.png", :border=>0, :title=>"email"), :subject => @article.title, :body => @article.body, :target => '_blank' %>
+    <%= mail_to '', 'email', :subject => @article.title, :body => @article.body, :target => '_blank' %>
+  </li>
+</ul>
+
+<h2 class="article-title">
+  <%=h @article.title %>
+</h2>
+
+<h4>
+  <b>by</b>
+  <%=h @article.author_name %>.
+  <%= pluralize(@article.edit_count, "update") %> since
+  <%=h @article.creation_date %>
+</h4>
+
+<p class="article-body">
+  <%= simple_format(h(@article.body)) %>
+</p>
