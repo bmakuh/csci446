@@ -25,11 +25,11 @@
 
 <h4>
   <b>by</b>
-  <%=h @article.author_name %> on
-  <!--<%=h pluralize(@article.edit_count, "edit", "edits") %> since-->
+  <%=h @article.author_name %>.
+  <%= pluralize(@article.edit_count, "update") %> since
   <%=h @article.creation_date %>
 </h4>
 
 <p class="article-body">
-  <%= @article.body %>
+  <%= simple_format(h(@article.body)) %>
 </p>

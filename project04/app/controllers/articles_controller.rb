@@ -1,6 +1,9 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
+  
+  before_filter :set_edit_return_url, :only => [:edit]
+  
   def index
     @articles = Article.all
 
@@ -44,15 +47,12 @@ class ArticlesController < ApplicationController
     @article = Article.new(params[:article])
     #@article.update_attribute(:edit_count, Article.increment_counter)
 
-    respond_to do |format|
       if @article.save
-        format.html { redirect_to(:back, :notice => 'Article was successfully created.') }
-        format.xml  { render :xml => @article, :status => :created, :location => @article }
+        redirect_to(@article, :flash => {:success => 'Article was successfully created.'})
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
+        flash[:error] = "There was a problem creating the article."
+        render :action => "new"
       end
-    end
   end
 
   # PUT /articles/1
@@ -61,14 +61,11 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     #Article.increment_counter(:edit_count, :id)
 
-    respond_to do |format|
       if @article.update_attributes(params[:article])
-        format.html { redirect_to(:back, :notice => 'Article was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to(session[:edit_redirect], :flash => {:success => 'Article was successfully updated.'})
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-      end
+        flash[:error] = "There was a problem updating the article."
+        render :action => "edit"
     end
   end
 
@@ -78,9 +75,12 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(articles_url) }
-      format.xml  { head :ok }
-    end
+    redirect_to(articles_url, :flash => {:success => "Article was successfully deleted."})
   end
+  
+  private
+  
+    def set_edit_return_url
+      session[:edit_redirect] = request.referrer
+    end
 end
