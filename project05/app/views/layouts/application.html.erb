@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Articles: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold', 'articles' %>
+</head>
+<body>
+
+<h1 class="header"><a href="/articles">Articl<span>.es<span></a></h1>
+<h3 class="header"><%= yield :subtitle %></h3>
+<%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
+<p style="color: green"><%= notice %></p>
+
+<ul class="menubar">
+  <li><%= link_to "articles", articles_path %></li>
+  <li><%= link_to "authors", "#" %></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>

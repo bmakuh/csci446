@@ -1,3 +1,5 @@
+require "will_paginate"
+
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
@@ -5,7 +7,9 @@ class ArticlesController < ApplicationController
   before_filter :set_edit_return_url, :only => [:edit]
   
   def index
-    @articles = Article.all
+    @articles = Article.paginate :per_page => 10, :page => params[:page],
+                                 :conditions => ['title like ?', "%#{params[:search]}%"],
+                                 :order => 'title'
 
     respond_to do |format|
       format.html # index.html.erb

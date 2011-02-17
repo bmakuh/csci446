@@ -1,0 +1,15 @@
+class ChangeAuthorNameToAuthorId < ActiveRecord::Migration
+  def self.up
+    remove_column :articles, :author_name
+    change_table :articles do |t|
+      t.references :author
+    end
+  end
+
+  def self.down
+    remove_column :articles, :author_id
+    change_table :articles do |to|
+      t.string :author_name, :null => false, :default => ""
+    end
+  end
+end

@@ -14,5 +14,6 @@ require 'faker'
 for i in 1..15
   articles = Article.create([ :title => Faker::Lorem.words(rand(7)+1).join(' ').capitalize,
                            :author_name => Faker::Name.name, :body => Faker::Lorem.paragraphs(rand(4)+1).join(' '),
-                           :creation_date => Date.today])
+                           :created_at => Date.today,
+                           :id => i])
 end

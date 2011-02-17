@@ -8,6 +8,7 @@
   <span id="new-article"><%= link_to 'New article', new_article_path %></span>
   
   <div id="table-wrapper">
+    <%= will_paginate @products %>
     <table>
       <thead>
         <tr id="table-head">
@@ -23,7 +24,7 @@
         <% @articles.each do |article| %>
           <tr>
             <td><%=h truncate(article.title, :length => 20) %></td>
-            <td><%=h article.author_name %></td>
+            <td><%=h article.author %></td>
             <td><%= truncate(article.body, :length => 80) %></td>
             <td><%= article.created_at.to_s(:short) %></td>
             <td class="icon"><%= link_to image_tag("show.png", :border=>0, :title=>"show"), article %></td>
@@ -33,6 +34,7 @@
         <% end %>
       </tbody>
     </table>
+    <%= will_paginate @products %>
   </div>
   
   <div id="article-count"><%= pluralize(Article.count, 'article', 'articles') %>.</div>
