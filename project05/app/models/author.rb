@@ -1,5 +1,6 @@
 class Author < ActiveRecord::Base
   has_many :articles
+  has_attached_file :photo
   
   validates_presence_of :name
   validate :no_author_named_sally
