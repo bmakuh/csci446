@@ -5,38 +5,25 @@ class ArticlesController < ApplicationController
   # GET /articles.xml
   
   before_filter :set_edit_return_url, :only => [:edit]
+  before_filter :load_authors, :only => [:view, :edit, :update]
   
   def index
     @articles = Article.paginate :per_page => 10, :page => params[:page],
                                  :conditions => ['title like ?', "%#{params[:search]}%"],
-                                 :order => 'title'
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @articles }
-    end
+                                 :order => 'title',
+                                 :include => :author
   end
 
   # GET /articles/1
   # GET /articles/1.xml
   def show
     @article = Article.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @article }
-    end
   end
 
   # GET /articles/new
   # GET /articles/new.xml
   def new
     @article = Article.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @article }
-    end
   end
 
   # GET /articles/1/edit
@@ -70,7 +57,7 @@ class ArticlesController < ApplicationController
       else
         flash[:error] = "There was a problem updating the article."
         render :action => "edit"
-    end
+      end
   end
 
   # DELETE /articles/1
@@ -86,5 +73,9 @@ class ArticlesController < ApplicationController
   
     def set_edit_return_url
       session[:edit_redirect] = request.referrer
+    end
+    
+    def load_authors
+      @authors = Author.all.collect
     end
 end

@@ -42,15 +42,12 @@ class AuthorsController < ApplicationController
   def create
     @author = Author.new(params[:author])
 
-    respond_to do |format|
-      if @author.save
-        format.html { redirect_to(@author, :notice => 'Author was successfully created.') }
-        format.xml  { render :xml => @author, :status => :created, :location => @author }
+    if @author.save
+        redirect_to(@author, :flash => {:success => 'Article was successfully created.'})
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @author.errors, :status => :unprocessable_entity }
+        flash[:error] = "There was a problem creating the author."
+        render :action => "new"
       end
-    end
   end
 
   # PUT /authors/1
@@ -58,14 +55,11 @@ class AuthorsController < ApplicationController
   def update
     @author = Author.find(params[:id])
 
-    respond_to do |format|
-      if @author.update_attributes(params[:author])
-        format.html { redirect_to(@author, :notice => 'Author was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @author.errors, :status => :unprocessable_entity }
-      end
+    if @author.update_attributes(params[:author])
+        redirect_to(session[:edit_redirect], :flash => {:success => 'Author was successfully updated.'})
+    else
+      flash[:error] = "There was a problem updating the author."
+      render :action => "edit"
     end
   end
 
@@ -75,9 +69,6 @@ class AuthorsController < ApplicationController
     @author = Author.find(params[:id])
     @author.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(authors_url) }
-      format.xml  { head :ok }
-    end
+    redirect_to(authors_url, :flash => {:success => "Author was successfully deleted."})
   end
 end
