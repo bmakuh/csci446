@@ -1,0 +1,177 @@
+/* global styles */
+$darkGreen: #383;
+$lightGreen: #9c9;
+
+a, a:visited {
+    color:$darkGreen;
+    text-decoration:none;
+}
+
+a:hover {
+    background:none;
+    color:$darkGreen;
+    text-decoration:underline;
+}
+
+label {
+    display:inline !important;
+    float:left;
+    width: 100px;
+}
+
+input, textarea, label {
+    margin:10px 0;
+}
+
+input[type="text"], textarea {
+    border:1px solid $darkGreen;
+    padding:.2em;
+}
+
+input[type="submit"] {
+    margin-left:100px;
+}
+
+.fieldWithErrors {
+    background:none !important;
+    display:inline;
+}
+
+.flash {
+    margin: 1em 0 1em 0;
+    
+    p {
+        margin:0px;
+        padding:1em;
+    }
+    
+    &.success {
+        border:1px solid #090;
+        color:#060;
+        background:#f0fff0;
+    }
+    
+    &.error {
+        border:1px solid #900;
+        color:#900;
+        background:#fff0f0;
+    }
+}
+
+/* header styles */
+
+.header {
+    margin:0 auto;
+    text-align:center;
+}
+
+h1.header {
+    color:$darkGreen;
+}
+
+h1.header span {
+    color:$lightGreen;
+}
+
+h3.header {
+    color:#aaa;
+}
+
+/* new article */
+#new-article {
+    background: url("/images/add.png") no-repeat top left;
+    padding-left:20px;
+}
+
+/* Table styles */
+#center-content {
+    margin:0 auto;
+    width:1200px;
+}
+
+#table-title {
+    display:inline-block;
+    margin-right:100px;
+    margin-top:2em;
+}
+
+#table-wrapper {
+    padding-bottom:20px;
+    width:1200px;
+}
+
+table {
+    margin:20px 0;
+    border-collapse:collapse;
+}
+
+th {
+    background:$lightGreen;
+    padding:0 !important;
+    margin:0 !important;
+    border-right:1px solid $darkGreen;
+    max-height:5px;
+}
+
+th.align-center {
+    text-align:center !important;
+}
+
+.icon {
+    background:#fff;
+    border:1px solid white !important;
+    
+    a:hover {
+        background:transparent;
+    }
+}
+
+th {
+    padding: 0 .4em !important;
+}
+
+th, td {
+    text-align:left;
+    vertical-align:top;
+}
+
+td {
+    border: 1px solid $darkGreen;
+    border-width: 0 1px 0 0;
+    padding: .5em .4em;
+}
+
+tr:nth-child(even) {
+    background:#dfd;
+}
+
+#article-count {
+    margin: 2em 0;
+}
+
+/* show styles */
+.article-body p {
+    text-indent:1em;
+}
+
+.article-title {
+    clear:both;
+}
+
+/* nav bar for show article */
+.nav-bar {
+    list-style:none;
+    margin: 2em 0;
+    clear:both !important;
+    
+    li {
+        float:left;
+        margin-right:5em;
+        margin-bottom:2em;
+        
+        a:hover {
+            color:$darkGreen !important;
+        }
+    }
+}
+

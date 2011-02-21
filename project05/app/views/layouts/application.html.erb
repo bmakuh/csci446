@@ -14,10 +14,12 @@
 <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
 <p style="color: green"><%= notice %></p>
 
-<ul class="menubar">
+<ul class="nav-bar">
   <li><%= link_to "articles", articles_path %></li>
   <li><%= link_to "authors", authors_path %></li>
 </ul>
+
+<span style="clear:both;"> </span>
 
 <%= yield %>
 
