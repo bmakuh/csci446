@@ -5,13 +5,10 @@ class ArticlesController < ApplicationController
   # GET /articles.xml
   
   before_filter :set_edit_return_url, :only => [:edit]
-  before_filter :load_authors, :only => [:view, :edit, :update]
+  before_filter :load_authors, :only => [:view, :edit, :update, :new, :create]
   
   def index
-    @articles = Article.paginate :per_page => 10, :page => params[:page],
-                                 :conditions => ['title like ?', "%#{params[:search]}%"],
-                                 :order => 'title',
-                                 :include => :author
+    @articles = Article.search(params[:search], params[:page])
   end
 
   # GET /articles/1

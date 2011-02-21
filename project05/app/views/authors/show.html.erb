@@ -6,6 +6,14 @@
   <b>Photo:</b>
   <%= image_tag @author.photo.url %>
 </p>
+<p>
+  <b>Articles:</b>
+    <ul>
+      <% @author.articles.each do |a| %>
+        <li><a href="/articles/<%= a.id %>"><%= a.title %></a></li>
+      <% end %>
+    </ul>
+</p>
 
 <%= link_to 'Edit', edit_author_path(@author) %> |
 <%= link_to 'Back', authors_path %>

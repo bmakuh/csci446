@@ -10,6 +10,12 @@ class Author < ActiveRecord::Base
     name
   end
   
+  def self.search(search, page)
+    paginate :per_page => 10, :page => page,
+             :conditions => ['name like ?', "%#{search}%"],
+             :order => 'name'
+  end
+  
   private
   
     def no_author_named_sally

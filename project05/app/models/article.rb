@@ -7,8 +7,8 @@ class Article < ActiveRecord::Base
   
   def self.search(search, page)
     paginate :per_page => 10, :page => page,
-             :conditions => ['name like ?', "%#{search}%"],
-             :order => 'name'
+             :conditions => ['title like ?', "%#{search}%"],
+             :order => 'title'
   end
   
   private

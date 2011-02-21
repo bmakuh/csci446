@@ -8,7 +8,7 @@
   <span id="new-article"><%= link_to 'New article', new_article_path %></span>
   
   <div id="table-wrapper">
-    <%= will_paginate @products %>
+    <%= will_paginate @articles %>
     <table>
       <thead>
         <tr id="table-head">
@@ -34,7 +34,7 @@
         <% end %>
       </tbody>
     </table>
-    <%= will_paginate @products %>
+    <%= will_paginate @articles %>
   </div>
   
   <div id="article-count"><%= pluralize(Article.count, 'article', 'articles') %>.</div>
