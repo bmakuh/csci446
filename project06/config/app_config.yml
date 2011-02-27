@@ -1,0 +1,14 @@
+development:
+    domain: localhost:3000
+    name: Gamez [development]
+    email: bmakuh@mines.edu
+    
+test:
+    domain: localhost:3000
+    name: Gamez [test]
+    email: bmakuh@mines.edu
+    
+production:
+    domain: localhost:3000
+    name: Gamez
+    email: bmakuh@mines.edu
