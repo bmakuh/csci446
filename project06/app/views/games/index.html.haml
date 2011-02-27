@@ -5,6 +5,7 @@
     %th Title
     %th Rating
     %th Date added
+  = will_paginate @games
   - for game in @games
     %tr
       %td= h game.title

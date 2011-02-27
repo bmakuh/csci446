@@ -5,3 +5,9 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+require "faker"
+
+30.times do
+  Game.create(:title => Faker::Company.catch_phrase, :rating => Faker::Company.bs, :created_at => Date.today)
+end

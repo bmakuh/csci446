@@ -1,6 +1,8 @@
+require "will_paginate"
+
 class GamesController < ApplicationController
   def index
-    @games = Game.all
+    @games = Game.search(params[:search], params[:page])
   end
 
   def show
@@ -41,4 +43,5 @@ class GamesController < ApplicationController
     flash[:notice] = "Successfully destroyed game."
     redirect_to games_url
   end
+  
 end
