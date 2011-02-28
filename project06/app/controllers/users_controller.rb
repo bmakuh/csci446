@@ -6,11 +6,24 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      session[:user_id] = @user.id
-      flash[:notice] = "Thank you for signing up! Please log in here."
-      redirect_to new_session_path
+      flash[:notice] = "Registration Successful."
+      redirect_to root_url
     else
       render :action => 'new'
+    end
+  end
+  
+  def edit
+    @user = current_user
+  end
+  
+  def update
+    @user = current_user
+    if @user.update_attributes(params[:user])
+      flash[:notice] = "Successfully updated profile."
+      redirect_to root_url
+    else
+      render :action => 'edit'
     end
   end
 end

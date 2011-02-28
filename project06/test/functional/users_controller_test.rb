@@ -16,6 +16,5 @@ class UsersControllerTest < ActionController::TestCase
     User.any_instance.stubs(:valid?).returns(true)
     post :create
     assert_redirected_to root_url
-    assert_equal assigns['user'].id, session['user_id']
   end
 end
