@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_filter :require_user, :only => [:show, :edit, :update]
+
+  
   def new
     @user = User.new
   end
@@ -11,6 +14,10 @@ class UsersController < ApplicationController
     else
       render :action => 'new'
     end
+  end
+  
+  def show
+    @user = current_user
   end
   
   def edit

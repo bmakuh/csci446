@@ -1,6 +1,8 @@
 require "will_paginate"
 
 class GamesController < ApplicationController
+  before_filter :require_user, :only => [:show, :new, :create, :edit, :update, :destroy]
+  
   def index
     @games = Game.search(params[:search], params[:page])
   end

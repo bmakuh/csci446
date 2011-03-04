@@ -1,4 +1,5 @@
 class Game < ActiveRecord::Base
+  belongs_to :user
   attr_accessible :title, :rating
   
   validates_presence_of :title, :rating
@@ -6,6 +7,7 @@ class Game < ActiveRecord::Base
   def self.search(search, page)
     paginate :per_page => 10, :page => page,
              :conditions => ['title like ?', "%#{search}%"],
-             :order => 'title'
+             :order => 'created_at DESC',
+             :include => :user
   end
 end

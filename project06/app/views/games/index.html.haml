@@ -10,9 +10,12 @@
     %tr
       %td= h game.title
       %td= h game.rating
-      %td= h game.created_at
-      %td= link_to 'Show', game
-      %td= link_to 'Edit', edit_game_path(game)
-      %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+      %td
+        = game.created_at.to_s(:datetime)
+        by
+        - if game.user.username == current_user.username
+          me
+        - else
+          = h game.user.username
 
 %p= link_to "New Game", new_game_path

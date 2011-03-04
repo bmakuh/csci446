@@ -9,5 +9,13 @@
 require "faker"
 
 30.times do
-  Game.create(:title => Faker::Company.catch_phrase, :rating => Faker::Company.bs, :created_at => Date.today)
+  #Game.create(:title => Faker::Company.catch_phrase,
+  #            :rating => Faker::Company.bs,
+  #            :created_at => Date.today,
+  #            :user_id => 1 + rand(2)
+  #            )
+  User.create(:username => Faker::Name.name,
+              :email => Faker::Internet.email,
+              :password => "password",
+              :password_confirmation => "password")
 end
