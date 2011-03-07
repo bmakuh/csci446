@@ -37,7 +37,7 @@ class Member::UsersController < Member::MemberController
 
   def create
     @user = User.new(params[:user])
-    if @user.save
+    if @user.save and verify_recaptcha()
       flash[:notice] = "Registration Successful."
       redirect_to root_url
     else

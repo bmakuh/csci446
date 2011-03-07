@@ -4,6 +4,10 @@ class Member::Game < ActiveRecord::Base
   
   validates_presence_of :title, :rating
   
+  def show
+    @games = @user.games.find_all
+  end
+  
   def self.search(search, page)
     paginate :per_page => 10, :page => page,
              :conditions => ['title like ?', "%#{search}%"],

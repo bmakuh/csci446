@@ -12,10 +12,6 @@
       %td= h game.rating
       %td
         = game.created_at.to_s(:datetime)
-        by
-        - if game.user.username == current_user.username
-          me
-        - else
-          = h game.user.username
+        by me
 
 %p= link_to "New Game", new_member_game_path

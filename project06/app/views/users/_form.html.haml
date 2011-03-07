@@ -28,4 +28,8 @@
   %br
   = f.password_field :password_confirmation
 %p
+  = f.label :human_test, "Human Test"
+  %br
+  = recaptcha_tags
+%p
   = f.submit "Sign up"
