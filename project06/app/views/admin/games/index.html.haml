@@ -13,6 +13,9 @@
       %td
         = game.created_at.to_s(:datetime)
         by
-        = h game.user.username
+        - if game.user.username == current_user.username
+          me
+        - else
+          = h game.user.username
 
-%p= link_to "New Game", new_game_path
+%p= link_to "New Game", new_admin_game_path

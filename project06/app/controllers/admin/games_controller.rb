@@ -1,6 +1,6 @@
 require "will_paginate"
 
-class GamesController < ApplicationController
+class Admin::GamesController < Admin::AdminController
   before_filter :require_user, :only => [:show, :new, :create, :edit, :update, :destroy]
   filter_resource_access
   

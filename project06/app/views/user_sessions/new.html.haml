@@ -1,9 +1,9 @@
 - title "Log in"
 
-%p== Don't have an account? #{link_to "Register!", signup_path}
+%p== Want an account? #{link_to "Register!", signup_path}
 
 - form_for @user_session do |f|
-  = f.error_messages
+  = f.error_messages(:header_message => 'Login failed', :message => 'Sorry, please re-enter your credentials.')
   %p
     = f.label :username
     %br

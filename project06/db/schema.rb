@@ -9,11 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110228025050) do
+ActiveRecord::Schema.define(:version => 20110307071847) do
 
   create_table "games", :force => true do |t|
     t.string   "title",                             :null => false
     t.string   "rating",     :default => "Unrated", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,6 +33,12 @@ ActiveRecord::Schema.define(:version => 20110228025050) do
     t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "role_id",            :default => 2, :null => false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
 end
